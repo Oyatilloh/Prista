@@ -1,0 +1,121 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+.container{
+	/*background: black url(../img/prista.jpg) no-repeat center;*/
+	max-width: 1250px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0, 10px;
+
+}
+.link{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	background-color: #E85850;
+	font-weight: bold;
+	padding: 12px 25px;
+	transition: background-color 0.3s ease; 
+}
+.link:hover{
+	background-color: #D9252C;
+}
+hr{
+	margin: 0;
+}
+/*SITE HEADER*/
+.site-header{
+	display: flex;
+	justify-content: space-between;
+	/*border: 1px solid red;*/
+	margin-top: 50px;
+
+}
+.logo{
+	display: block;
+	margin-left: 25px;
+}
+.site-header-right{
+	display: flex;
+	/*border: 1px solid green;*/
+}
+.site-nav-list{
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+
+}
+.site-nav-items{
+	margin-right: 55px;
+	/*border: 1px solid green;*/
+	padding: 10px 0;
+	transition: box-shadow 0.4s ease;
+
+}
+.site-nav-items a{
+	color: rgba(0,0,0,0.4);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+.site-nav-items:hover{
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.8);
+}
+.site-nav-items:hover.site-nav-items>a{
+	color: rgba(0,0,0,0.8);
+
+}
+.search{
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.8);
+	padding-bottom: 5px;
+
+}
+.search:focus{
+	outline: none;
+	border-bottom: 2px solid black;
+}
+/*FREEDOM CALLS*/
+
+.freedom-section{
+	/*border: 1px solid green;*/
+	padding: 120px 0 200px 0;
+	background-image: url(../img/prista-oil.jpg);
+	background-repeat: no-repeat;
+	background-size: 600px;
+	/*background-size: contain 600px;*/
+	background-position: right -5% top 0%;
+	overflow: visible;
+}
+.freedom-calls-taxt-side{
+	/*border: 1px solid red;*/
+	width: 500px;
+}
+.freedom-calls-taxt-side>h1{
+	font-size: 50px;
+}
+.freedom-calls-taxt-side>p{
+	font-size: 15px;
+	color: rgba(0,0,0,0.4);
+	padding: 10px 0;
+	padding-left: 30px;
+	border-left: 2px solid rgba(0,0,0,0.4);
+	letter-spacing: 2,5px;
+	word-spacing: 2px;
+	line-height: 22px;		
+}
+.freedom-calls-taxt-side>p{
+	margin-top: 20px;
+}

@@ -1,0 +1,7 @@
+.main{
+	width: 100%
+}
+.left,
+.right{
+	@include lib.makeBox(50%, 300px, orange);
+}
